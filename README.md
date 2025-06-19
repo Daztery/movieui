@@ -1,68 +1,71 @@
-# 🎬 Movie UI – Jetpack Compose
+# 🎬 Movie UI – SwiftUI
 
-A clean and modular Android UI implementation for a movie app using **Jetpack Compose**. This project is designed to showcase modern Android UI development practices and clean code structure, focusing purely on the **presentation layer**.
+A minimalist and modular iOS movie app built with **SwiftUI**, focusing on clean UI composition and reusable components. This project serves as a UI prototype and foundation for integrating real data later on.
 
 ---
 
-## 🚀 Main Features
+## 🚀 Features
 
-- Built entirely with **Jetpack Compose** (Material 3).
-- Modular architecture with separation of UI logic.
-- **Reusable components** such as `MovieCard`, `MovieList`, `TopBar`, etc.
-- Previews for design system components.
-- Light and dark theme support.
-- Ready to be extended with domain/data layers.
+- Built entirely with **SwiftUI**.
+- Modular UI architecture with reusable components.
+- Grid layout for movie posters.
+- Movie detail screen with overview and backdrop.
+- Genre tag styling.
+- Light and dark mode support.
+- Organized into `Views`, `Components`, and `Models`.
 
 ---
 
 ## 🧩 Tech Stack
 
-- **Language:** Kotlin  
-- **UI Toolkit:** Jetpack Compose  
-- **Design System:** Material 3 + Custom Theming  
-- **Architecture:** Clean Presentation Layer  
-- **Build System:** Gradle (KTS)  
-- **Others:** Android Studio Preview, Compose Navigation (optional)
+- **Language:** Swift  
+- **Framework:** SwiftUI  
+- **Architecture:** Lightweight MVVM (UI only)  
+- **Design:** Custom theming with dark mode support  
+- **Previews:** Enabled for all components
 
 ---
 
-## 📁 Module Structure
+## 📁 Project Structure
 
-- `ui/`: Contains all composables and UI screens.
-- `theme/`: App theme, colors, typography.
-- `navigation/`: Navigation graph and screen routing.
-- `components/`: Reusable UI elements.
-- `screens/`: High-level composable screens.
+```
+MovieUI/
+├── Components/       # Reusable UI elements (MoviePoster, Tag, etc.)
+├── Views/            # Screens (Home, Detail)
+├── Models/           # Static models for mock data
+└── Assets/           # Images and colors
+```
 
 ---
 
 ## 🛠️ Getting Started
 
-1. Clone the repo:
+1. Clone the repository:  
    ```bash
    git clone https://github.com/Daztery/movieui.git
    ```
-2. Open the project in **Android Studio (Giraffe or newer)**.
-3. Sync Gradle and run the app on an emulator or device.
+2. Open `MovieUI.xcodeproj` in **Xcode 14+**.
+3. Build and run the app on the iOS Simulator or real device.
 
 ---
 
+## 🎯 Purpose
 
-## 💡 Purpose
+This project focuses on:
 
-This project focuses solely on the **UI layer**, making it a great starting point for:
+- Practicing modern SwiftUI component structure.
+- Rapid prototyping of a movie UI.
+- Demonstrating clean SwiftUI code for portfolios.
 
-- UI prototyping with Jetpack Compose.
-- Exploring clean Compose practices.
-- Extending into a full app with data/domain integration.
+It can be extended by integrating data from TMDB or any REST API.
 
 ---
 
-## 🧭 Future Improvements
+## 🔄 Next Steps
 
-- Integrate with TMDB API for real data.
-- Add navigation between screens.
-- Animate transitions and interactions.
-- Implement accessibility features (a11y).
-- Add UI tests with Compose Test APIs.
+- Add navigation with `NavigationStack`.
+- Connect to a movie API (e.g., TMDB).
+- Add ViewModels and networking.
+- Introduce animations and transitions.
+- UI testing with XCTest and ViewInspector.
 
